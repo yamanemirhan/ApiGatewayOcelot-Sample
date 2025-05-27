@@ -12,7 +12,13 @@
                     "Host": "localhost",
                     "Port": 5001
                 }
-            ]
+            ],
+            "RateLimitOptions": {
+                "EnableRateLimiting": true,
+                "Period": "5s",
+                "Limit": 3,
+                "PeriodTimespan": 10 // after exceeding the api call quota we need to wait for 10s
+            }
         },
         {
             "UpstreamPathTemplate": "/gateway/booking/{id}",
