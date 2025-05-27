@@ -18,6 +18,9 @@
                 "Period": "5s",
                 "Limit": 3,
                 "PeriodTimespan": 10 // after exceeding the api call quota we need to wait for 10s
+            },
+            "FileCacheOptions": {
+                "TtlSeconds": 5 // timetoloeave, cache the response for X seconds
             }
         },
         {
